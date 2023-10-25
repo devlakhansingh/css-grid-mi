@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    
+    padding: 20px;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px sloid yellow;
+    grid-gap: 20px;
+
+}
+.container div{
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: all ease-in-out 0.3s;
+}
+.container div:hover{
+    filter: grayscale(0);
+    border: 2px solid white;
+    transform: scale(110%);
+    z-index: 1;
+}
+.box1{
+    background-image: url('https://source.unsplash.com/random/?city,laptop');
+    
+}
+.box2{
+    background-image: url('https://source.unsplash.com/random/?day,night');
+    
+}
+.box3{
+    background-image: url('https://source.unsplash.com/random/?city,dog');
+    
+}
+.box4{
+    background-image: url('https://source.unsplash.com/random/?city,nature');
+    
+}
+.box5{
+    background-image: url('https://source.unsplash.com/random/?city,coding');
+    
+}
+.box6{
+    background-image: url('https://source.unsplash.com/random/?city,bike');
+    
+
+}
+@media(max-width : 960px){
+
+    .container{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+}
+
+@media (max-width : 640px) {
+    .container{
+        min-height: 300vh;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
